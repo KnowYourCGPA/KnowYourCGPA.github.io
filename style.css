@@ -14,7 +14,7 @@ font-family: 'Roboto', sans-serif;
 h1{
     font-family: 'Handjet', cursive;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 35px;
 }
 header{
     height: 60px;
@@ -37,7 +37,7 @@ header{
 }
 .branchName{
     color: #c9222a;
-    font-size: 1.3rem;
+    font-size: 20px;
     font-family: 'roboto';
     font-weight: 500;
 
@@ -64,16 +64,25 @@ header{
     top: 60px;
 }
 
+#changelogBody{
+    background-color: #fffff0;
+    font-family: 'open sans'
+}
+
+.changelogbox{
+    padding: 10px;
+
+}
 main{
     padding: 16px;
     background-color: #fffff0;
-    height: auto;
+    height: 100%;
     font-family: 'roboto';
 }
 
 h3{
     font-family: 'Open Sans',sans-serif ;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #555;
 }
 #segmentContainer{
@@ -91,6 +100,7 @@ h3{
 
 .secondRow{
     padding: 5px 0;
+    font-size: 16px;
 }
 
 .CourseCode{
@@ -99,20 +109,25 @@ h3{
     font-weight: 600;
 }
 
-/* Styling the input field */
 input[type="number"] {
     border: none;
     border-bottom: 2px solid #ccc;
     outline: none;
     transition: border-bottom-color 0.3s ease;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     padding: 5px 0;
     background-color: #fffff0;
     width: 70px;
+    height: 25px;
     padding-left: 23px;
     margin-left: 10px;
   }
 
+  .credits a {
+    color: #cdabff;
+    text-decoration: none;
+  }
   
   /* Darkening the input field on focus */
   input[type="number"]:focus {
