@@ -120,7 +120,7 @@ input[type="number"] {
     background-color: #fffff0;
     width: 70px;
     height: 25px;
-    padding-left: 23px;
+    padding-left: 15px;
     margin-left: 10px;
   }
 
@@ -200,4 +200,30 @@ footer a {
     text-decoration: none;
     color: #fffff0;
     
+}
+
+.upcomingFeatures{
+    
+    background-color: #7fffd4;
+    border: 2px solid #041c32;
+    color: #003e2a;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px #04422e74;
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 150%;
+
+}
+.upcomingFeatures h3{
+    font-family: 'Handjet', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.upcomingFeatures p{
+    margin-top: 5px;
+}
+.ucOnPage{
+    margin-top: 20px;
+    max-width: 500px;
 }
