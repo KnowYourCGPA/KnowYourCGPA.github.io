@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Handjet:wght@200;300;400;500;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+/* font-family: 'Amaranth', sans-serif;
+font-family: 'Handjet', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Handjet', cursive;
+    font-weight: 300;
+    font-size: 2rem;
+}
+header{
+    height: 60px;
+    background-color: #c9222a;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding:0 15px;
+    position: sticky;
+    top: 0;
+}
+
+
+.heading{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.branchName{
+    color: #c9222a;
+    font-size: 1.3rem;
+    font-family: 'roboto';
+    font-weight: 500;
+
+}
+
+.mainLogo{
+    font-family: 'Handjet', cursive;
+    text-decoration: none;
+    color: #fffff0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.credits{
+    display: flex;
+    align-items: center;
+    height: 23px;
+    background-color: #041c32;
+    justify-content: center;
+    font-family: 'roboto';
+    color: #cdcdcd;
+    font-size: 13px;
+    position: sticky;
+    top: 60px;
+}
+
+main{
+    padding: 16px;
+    background-color: #fffff0;
+    height: auto;
+    font-family: 'roboto';
+}
+
+h3{
+    font-family: 'Open Sans',sans-serif ;
+    font-size: 1.5rem;
+    color: #555;
+}
+#segmentContainer{
+    padding-top: 5px;
+    border-top: #c9222a 2px solid;
+    border-width: 100%;
+}
+
+.inputContainer{
+    padding-top: 7px;
+}
+.firstRow{
+    padding-top: 5px;
+}
+
+.secondRow{
+    padding: 5px 0;
+}
+
+.CourseCode{
+    color: #c9222a;
+    font-family: 'open sans';
+    font-weight: 600;
+}
+
+/* Styling the input field */
+input[type="number"] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    font-size: 16px;
+    padding: 5px 0;
+    background-color: #fffff0;
+    width: 70px;
+    padding-left: 23px;
+    margin-left: 10px;
+  }
+
+  
+  /* Darkening the input field on focus */
+  input[type="number"]:focus {
+    border-bottom-color: #555;
+  }
+::placeholder{
+    color: #c9222a71;
+}
+.buttonContainer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 5px;
+    background-color:transparent;
+    max-width: 500px;
+}
+button{
+    height: 40px;
+    background-color: transparent;
+    color: #c9222a;
+    border-radius: 10px;
+    border: 2px solid #c9222a;
+    padding: 0 20px;
+    font-weight: bold;
+}
+button:hover{
+    color: #fffff0;
+    background-color: #c9222a;
+}
+
+#sgpaContainer{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    color: #c9222a;
+    font: 'open sans';
+    font-weight: 500;
+    font-size: 18px;
+}
+footer{
+    height: 150px;
+    background-color: #041c32;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footernote{
+    padding: 15px;
+    align-self: center;
+}
+
+.footernote1{
+    color: #cdcdcd;
+    align-self: center;
+}
+.linkcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+footer a {
+    text-decoration: none;
+    color: #fffff0;
+    
+}
