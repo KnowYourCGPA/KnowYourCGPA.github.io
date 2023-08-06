@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
     <title>Rainbow Celebration</title>
     <style>
         /* CSS for the header */
@@ -30,9 +29,10 @@
 
         /* CSS for the meta tag with the theme color */
         meta[name="theme-color"] {
-            content: red; /* Initial theme color, you can change it to your preferred color */
+            content: #041c32; /* Initial theme color, you can change it to your preferred color */
         }
     </style>
+    <meta name="theme-color" content="#041c32">
 </head>
 <body>
     <header id="header">Header Content</header>
@@ -44,12 +44,16 @@
 
         function setRainbowBackground() {
             header.style.animation = 'rainbowBackground 7s linear infinite';
-            metaThemeColor.content = 'red'; // Initial theme color, change it to match the first color of the rainbow
+            metaThemeColor.setAttribute('content', '#041c32'); // Set the initial theme color to match the first color of the rainbow
+        }
+
+        function setThemeColor(color) {
+            metaThemeColor.setAttribute('content', color);
         }
 
         function resetBackground() {
             header.style.animation = 'none';
-            metaThemeColor.content = 'red'; // Reset the theme color to its initial value
+            metaThemeColor.setAttribute('content', '#041c32'); // Reset the theme color to its initial value
         }
 
         // Check the value of 'result' and apply the rainbow effect if it's 7.35
@@ -59,5 +63,6 @@
             resetBackground();
         }
     </script>
+    hi i am shivam
 </body>
 </html>
