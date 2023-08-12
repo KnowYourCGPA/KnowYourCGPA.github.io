@@ -1,125 +1,195 @@
-<!doctypehtml>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="#c9222a" name="theme-color">
-    <title>CSE Sem-3: KnowYourCGPA</title>
-    <meta content="CSE Sem-3: KnowYourCGPA" property="og:title">
-    <meta content="Calculate Your CGPA of Sem-3 based on your marks in Major Exam." property="og:description">
-    <meta content="https://knowyourcgpa.github.io/decorationHouse/logo.jpg/" property="og:image">
-    <meta content="image/jpeg" property="og:image:type">
-    <meta content="200" property="og:image:width">
-    <meta content="200" property="og:image:height">
-    <meta content="https://KnowYourCGPA.github.io/cse-sem3.html/" property="og:url">
-    <link href="/decorationHouse/style.css" rel="stylesheet">
-    <link href="/decorationHouse/favicon.jpg" rel="icon" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet">
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-RSLTHGS9P4" async></script>
-    <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-RSLTHGS9P4")</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c9222a">
+
+    <title>CSE Sem-2: KnowYourCGPA</title>
+
+    <meta property="og:title" content="CSE Sem-2: KnowYourCGPA">
+    <meta property="og:description" content="Calculate Your CGPA of Sem-2 based on your marks in Major Exam.">
+    <meta property="og:url" content="https://KnowYourCGPA.github.io/cse-sem2.html/">
+
+    <link rel="stylesheet" href="/decorationHouse/style.css">
+    <link rel="icon" type="image/x-icon" href="/decorationHouse/favicon.jpg">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RSLTHGS9P4"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-RSLTHGS9P4'); </script>
+
+<body>
     <div id="allHeader">
         <header id="mainHeader">
-            <div id="headercontainer"><a href="/cse-sem2.html" class="mainLogo">KnowYourCGPA</a> <span
-                    class="material-symbols-outlined">nights_stay</span></div>
+            <div id="headercontainer">
+                <a href="/cse-sem3.html" class="mainLogo">KnowYourCGPA</a>
+                <div class="darkmodeicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                        <path id="darkModeIconPath"
+                            d="M240-383.922q42.615 0 77.999 23.615 35.385 23.616 53.461 63.231l13.616 33.154H422q33.307 0 57.614 24.808 24.308 24.807 24.308 59.114 0 35.307-24.615 59.114Q454.692-97.078 420-97.078H240q-59.692 0-101.307-41.615T97.078-240q0-59.692 41.615-101.807T240-383.922ZM433.306-820.69q-10.076 96.692 19.347 188.153 29.423 91.461 99.115 160.153 68.692 69.693 160.154 98.923 91.461 29.231 188.768 19.155-30 134.076-136.269 217.998-106.268 83.922-243.652 82.306-10.23 0-19.653-.5-9.423-.5-19.039-1.5 36.692-15.692 59.461-49.114 22.769-33.423 22.769-74.884 0-58.538-40.231-100.038t-97.154-43.653q-25.307-54.616-75.576-87.616-50.269-33-111.346-33-28.23 0-55.038 8.385-26.807 8.384-49.961 24.538-1-8.154-1-15.116v-15.115q-1-137.384 82.423-242.729Q299.846-789.69 433.306-820.69Z" />
+                    </svg>
+                </div>
+            </div>
             <script src="/sitewideJavascripts/themeController.js"></script>
         </header>
-        <div class="credits">Version 2.0 Parivartan(Beta) -  <a href="changelog.html">changelogs</a></div>
+        <div class="credits">
+            Version 2.1 P&nbsp;-&nbsp; <a href="changelog.html">changelogs</a>
+        </div>
     </div>
     <main>
         <div class="content">
-            <div class="heading">
-                <h1>Semester: 3</h1><span class="branchName">CSE</span>
-            </div>
-            <form id="segmentContainer">
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Intro. to Logic</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">PCL2042: </span><input type="number"
-                            name="PCL2042_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Theory of Computation</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSL2041: </span><input type="number"
-                            name="CSL2041_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Computer Org. & Arch.</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSL2061: </span><input type="number"
-                            name="CSL2061_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Object Oriented Prog.</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSL2022: </span><input type="number"
-                            name="CSL2022_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Object Oriented Prog. Lab.</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSP2022: </span><input type="number"
-                            name="CSP2022_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Operating Systems</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSL2051: </span><input type="number"
-                            name="CSL2051_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Operating Systems Lab.</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSP2051: </span><input type="number"
-                            name="CSP2051_m" placeholder="marks?"></div>
-                </div>
-                <div class="inputContainer">
-                    <div class="firstRow">
-                        <h3>Summer Internship-I</h3>
-                    </div>
-                    <div class="secondRow"><span class="CourseCode">CSC2001: </span><input type="number"
-                            name="CSC2001_m" placeholder="marks?"></div>
-                </div>
-                <div class="cgpaCalc">
-                    <div class="toggle-container"><input type="checkbox" id="toggleButton" class="toggle-input"> <label
-                            class="toggle-btn" for="toggleButton"></label>
-                        <h3>Get CGPA</h3>
-                    </div>
-                    <div class="hidden-content" id="content">
-                        <div class="secondRow cgpaAsk"><span class="CourseCode">Your CGPA till Sem 2:</span> <input
-                                type="number" name="previousCGPA" placeholder="CGPA?" id="cgpaInput"></div>
-                    </div>
-                </div>
-                <div class="buttonContainer"><button onclick="calculateCGPA()" type="button">Calculate</button> <button
-                        onclick="resetForm()" type="button">Clear</button></div>
-            </form>
-            <div id="sgpaContainer">
-                <p id="displaySGPA">Your Result will display here.
-                <p id="displayCGPA">
-            </div>
-            <div class="ucOnPage upcomingFeatures">
-                <h3>Important!</h3>
-                <p>The main logo on top left temporarily work as a switch to toggle Semester 2 and Semester 3
-                    calculators.
-            </div>
+        <div class="heading">
+            <h1>Semester: 2</h1>
+            <span class="branchName">CSE</span>
         </div>
+        <form id="segmentContainer">
+            <!-- Subjects Start Here -->
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Engineering Maths 2</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">MTL1026: </span>
+                    <input type="number" name="Subject1_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Digital Electronics</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">ECL2070: </span>
+                    <input type="number" name="Subject2_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Digital Electronics Lab.</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">ECP2070: </span>
+                    <input type="number" name="Subject3_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Data Structure</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">CSL2031: </span>
+                    <input type="number" name="Subject4_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Data Structure lab.</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">CSP2031: </span>
+                    <input type="number" name="Subject5_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Prog. with Python</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">CSL1028: </span>
+                    <input type="number" name="Subject6_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Prog. with Python Lab.</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">CSP1028: </span>
+                    <input type="number" name="Subject7_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Discourse in HV</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">PCL1067: </span>
+                    <input type="number" name="Subject8_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Discrete Structure</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">MTL2024: </span>
+                    <input type="number" name="Subject9_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Workshop</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">MEP1114: </span>
+                    <input type="number" name="Subject10_m" placeholder="marks?">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="firstRow">
+                    <h3>Language Lab.</h3>
+                </div>
+                <div class="secondRow">
+                    <span class="CourseCode">LNP1142: </span>
+                    <input type="number" name="Subject11_m" placeholder="marks?">
+                </div>
+            </div>
+            <!-- Subjects End Here -->
+
+            <div class="cgpaCalc">
+                <div class="toggle-container">
+                    <input type="checkbox" id="toggleButton" class="toggle-input">
+                    <label for="toggleButton" class="toggle-btn"></label>
+                    <h3>Get CGPA</h3>
+                </div>
+                <div id="content" class="hidden-content">
+                    <div class="secondRow cgpaAsk">
+                        <span class="CourseCode">Your CGPA till Sem 1:</span>
+                        <input type="number" name="previousCGPA" placeholder="CGPA?" id="cgpaInput">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <button onclick="calculateCGPA()" type="button">Calculate</button>
+                <button onclick="resetForm()" type="button">Clear</button>
+            </div>
+        </form>
+        <div id="sgpaContainer">
+            <p id="displaySGPA">Your Result will display here.</p>
+            <p id="displayCGPA"></p>
+        </div>
+
+        <div class="upcomingFeatures ucOnPage">
+            <h3>Important!
+            </h3>
+            <p>The main logo on top left temporarily work as a switch to toggle Semester 2 and Semester 3
+                calculators.</p>
+            <p>This website now use cookies to enhance your experience.</p>
+        </div>
+    </div>
     </main>
-    <script src="/calculationCenter/CSE/CSE_sem3.js"></script>
-    <script src="/sitewideJavascripts/toggleButton.js"></script>
+
     <footer>
-        <p id="footernote">Made with ❤ by Shivam
-        <p class="footernote1">Student at Shri Mata Vaishno Devi University
-        <p class="footernote1">Department of CSE
-        <div class="linkcontainer"><a href="https://www.instagram.com/z1_shivam/">instagram</a></div>
+        <p id="footernote">Made with &#10084 by Shivam</p>
+        <p class="footernote1">Student at Shri Mata Vaishno Devi University</p>
+        <p class="footernote1">Department of CSE</p>
+        <div class="linkcontainer">
+            <a href="https://www.instagram.com/z1_shivam/">instagram</a>
+        </div>
     </footer>
+
+    <script src="/calculationCenter/CSE/CSE_sem2.js"></script>
+    <script src="/sitewideJavascripts/toggleButton.js"></script>
+</body>
+</html>
