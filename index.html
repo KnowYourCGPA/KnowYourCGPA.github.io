@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#c9222a">
 
-    <title>CSE Sem-2: KnowYourCGPA</title>
-
-    <meta property="og:title" content="CSE Sem-2: KnowYourCGPA">
-    <meta property="og:description" content="Calculate Your CGPA of Sem-2 based on your marks in Major Exam.">
-    <meta property="og:url" content="https://KnowYourCGPA.github.io/cse-sem2.html/">
+    <title>KnowYourCGPA</title>
+    <meta property="og:title" content="KnowYourCGPA">
+    <meta property="og:description"
+        content="Optimize your CGPA: Input marks, visualize potential scores, and focus on key subjects.">
+    <meta property="og:url" content="https://KnowYourCGPA.github.io/">
 
     <link rel="stylesheet" href="/decorationHouse/style.css">
     <link rel="icon" type="image/x-icon" href="/decorationHouse/favicon.jpg">
 </head>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSLTHGS9P4"></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-RSLTHGS9P4'); </script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RSLTHGS9P4');
+</script>
+
 <body>
     <div id="allHeader">
         <header id="mainHeader">
             <div id="headercontainer">
-                <a href="/cse-sem3.html" class="mainLogo">KnowYourCGPA</a>
+                <a href="/" class="mainLogo">KnowYourCGPA</a>
                 <div class="darkmodeicon">
                     <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
                         <path id="darkModeIconPath"
@@ -32,151 +39,127 @@
             <script src="/sitewideJavascripts/themeController.js"></script>
         </header>
         <div class="credits">
-            Version 2.1 P&nbsp;-&nbsp; <a href="changelog.html">changelogs</a>
+            Version 3.0 C&nbsp;-&nbsp; <a href="changelog.html">changelogs</a>
         </div>
     </div>
-    <main>
+    <main style="padding:10px">
         <div class="content">
-        <div class="heading">
-            <h1>Semester: 2</h1>
-            <span class="branchName">CSE</span>
-        </div>
-        <form id="segmentContainer">
-            <!-- Subjects Start Here -->
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Engineering Maths 2</h3>
+            <div class="branch" id="branch1">
+                <div class="branch-name">
+                    <h2>Computer Science &amp; Engg.</h2>
+                    <span class="branchName">B. Tech</span>
                 </div>
-                <div class="secondRow">
-                    <span class="CourseCode">MTL1026: </span>
-                    <input type="number" name="Subject1_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Digital Electronics</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">ECL2070: </span>
-                    <input type="number" name="Subject2_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Digital Electronics Lab.</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">ECP2070: </span>
-                    <input type="number" name="Subject3_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Data Structure</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">CSL2031: </span>
-                    <input type="number" name="Subject4_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Data Structure lab.</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">CSP2031: </span>
-                    <input type="number" name="Subject5_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Prog. with Python</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">CSL1028: </span>
-                    <input type="number" name="Subject6_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Prog. with Python Lab.</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">CSP1028: </span>
-                    <input type="number" name="Subject7_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Discourse in HV</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">PCL1067: </span>
-                    <input type="number" name="Subject8_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Discrete Structure</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">MTL2024: </span>
-                    <input type="number" name="Subject9_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Workshop</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">MEP1114: </span>
-                    <input type="number" name="Subject10_m" placeholder="marks?">
-                </div>
-            </div>
-            <div class="inputContainer">
-                <div class="firstRow">
-                    <h3>Language Lab.</h3>
-                </div>
-                <div class="secondRow">
-                    <span class="CourseCode">LNP1142: </span>
-                    <input type="number" name="Subject11_m" placeholder="marks?">
-                </div>
-            </div>
-            <!-- Subjects End Here -->
-
-            <div class="cgpaCalc">
-                <div class="toggle-container">
-                    <input type="checkbox" id="toggleButton" class="toggle-input">
-                    <label for="toggleButton" class="toggle-btn"></label>
-                    <h3>Get CGPA</h3>
-                </div>
-                <div id="content" class="hidden-content">
-                    <div class="secondRow cgpaAsk">
-                        <span class="CourseCode">Your CGPA till Sem 1:</span>
-                        <input type="number" name="previousCGPA" placeholder="CGPA?" id="cgpaInput">
+                <script src="home.js"></script>
+                <div class="button-group">
+                    <div class="first-row">
+                        <button disabled id="sem1">Sem-1</button>
+                        <button id="sem2" onclick="window.location.href ='/cse-sem2.html'">Sem-2</button>
+                        <button id="sem3" onclick="window.location.href ='/cse-sem3.html'">Sem-3</button>
+                        <button disabled id="sem4">Sem-4</button>
+                    </div>
+                    <div class="second-row">
+                        <button disabled id="sem5">Sem-5</button>
+                        <button disabled id="sem6">Sem-6</button>
+                        <button id="sem7" onclick="window.location.href ='/cse-sem7.html'">Sem-7</button>
+                        <button disabled id="sem8">Sem-8</button>
                     </div>
                 </div>
             </div>
-
-            <div class="buttonContainer">
-                <button onclick="calculateCGPA()" type="button">Calculate</button>
-                <button onclick="resetForm()" type="button">Clear</button>
+            <div class="branch" id="branch1">
+                <div class="branch-name">
+                    <h2>Electronics &amp; Comm. Engg.</h2>
+                    <span class="branchName">B. Tech</span>
+                </div>
+                <script src="home.js"></script>
+                <div class="button-group">
+                    <div class="first-row">
+                        <button disabled id="sem1">Sem-1</button>
+                        <button disabled id="sem2">Sem-2</button>
+                        <button disabled id="sem3">Sem-3</button>
+                        <button disabled id="sem4">Sem-4</button>
+                    </div>
+                    <div class="second-row">
+                        <button disabled id="sem5">Sem-5</button>
+                        <button disabled id="sem6">Sem-6</button>
+                        <button disabled id="sem7">Sem-7</button>
+                        <button disabled id="sem8">Sem-8</button>
+                    </div>
+                </div>
             </div>
-        </form>
-        <div id="sgpaContainer">
-            <p id="displaySGPA">Your Result will display here.</p>
-            <p id="displayCGPA"></p>
+            <div class="branch" id="branch1">
+                <div class="branch-name">
+                    <h2>Mechanical Engineering</h2>
+                    <span class="branchName">B. Tech</span>
+                </div>
+                <script src="home.js"></script>
+                <div class="button-group">
+                    <div class="first-row">
+                        <button disabled id="sem1">Sem-1</button>
+                        <button disabled id="sem2">Sem-2</button>
+                        <button disabled id="sem3">Sem-3</button>
+                        <button disabled id="sem4">Sem-4</button>
+                    </div>
+                    <div class="second-row">
+                        <button disabled id="sem5">Sem-5</button>
+                        <button disabled id="sem6">Sem-6</button>
+                        <button disabled id="sem7">Sem-7</button>
+                        <button disabled id="sem8">Sem-8</button>
+                    </div>
+                </div>
+            </div>
+            <div class="branch" id="branch1">
+                <div class="branch-name">
+                    <h2>Electrical Engineering</h2>
+                    <span class="branchName">B. Tech</span>
+                </div>
+                <script src="home.js"></script>
+                <div class="button-group">
+                    <div class="first-row">
+                        <button disabled id="sem1" >Sem-1</button>
+                        <button disabled id="sem2">Sem-2</button>
+                        <button disabled id="sem3">Sem-3</button>
+                        <button disabled id="sem4">Sem-4</button>
+                    </div>
+                    <div class="second-row">
+                        <button disabled id="sem5">Sem-5</button>
+                        <button disabled id="sem6">Sem-6</button>
+                        <button disabled id="sem7">Sem-7</button>
+                        <button disabled id="sem8">Sem-8</button>
+                    </div>
+                </div>
+            </div>
+            <div class="branch" id="branch1">
+                <div class="branch-name">
+                    <h2>Civil Engineering</h2>
+                    <span class="branchName">B. Tech</span>
+                </div>
+                <script src="home.js"></script>
+                <div class="button-group">
+                    <div class="first-row">
+                        <button disabled id="sem1" >Sem-1</button>
+                        <button disabled id="sem2">Sem-2</button>
+                        <button disabled id="sem3">Sem-3</button>
+                        <button disabled id="sem4">Sem-4</button>
+                    </div>
+                    <div class="second-row">
+                        <button disabled id="sem5">Sem-5</button>
+                        <button disabled id="sem6">Sem-6</button>
+                        <button disabled id="sem7">Sem-7</button>
+                        <button disabled id="sem8">Sem-8</button>
+                    </div>
+                </div>
+            </div>
+            <div class="upcomingFeatures ucOnPage">
+                <h3>Important!
+                </h3>
+                <p>This Website now use cookies to improve your experiences.</p>
+                <p>REQUEST CGPA calc. for your branch <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGKQc3maNgVr1RfzcLzYt5de7eEs_fJ207-hQyzNn3Fl64VQ/viewform?usp=sf_link">here.</a></p>
+            </div>
         </div>
-
-        <div class="upcomingFeatures ucOnPage">
-            <h3>Important!
-            </h3>
-            <p>The main logo on top left temporarily work as a switch to toggle Semester 2 and Semester 3
-                calculators.</p>
-            <p>This website now use cookies to enhance your experience.</p>
-        </div>
-    </div>
     </main>
+
+    <script src="/calculationCenter/CSE/CSE_sem3.js"></script>
+    <script src="/sitewideJavascripts/toggleButton.js"></script>
 
     <footer>
         <p id="footernote">Made with &#10084 by Shivam</p>
@@ -186,8 +169,6 @@
             <a href="https://www.instagram.com/z1_shivam/">instagram</a>
         </div>
     </footer>
-
-    <script src="/calculationCenter/CSE/CSE_sem2.js"></script>
-    <script src="/sitewideJavascripts/toggleButton.js"></script>
 </body>
+
 </html>
