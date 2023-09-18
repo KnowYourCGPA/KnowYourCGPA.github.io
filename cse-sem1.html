@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE Sem-1: KnowYourCGPA</title>
+
+    <meta property="og:title" content="CSE Sem-1: KnowYourCGPA" />
     <meta name="theme-color" content="#c9222a" />
-
-    <title>CSE Sem-7: KnowYourCGPA</title>
-
-    <meta property="og:title" content="CSE Sem-7: KnowYourCGPA" />
     <meta
       property="og:description"
-      content="Calculate Your CGPA of Sem-7 based on your marks in Major Exam."
+      content="Calculate Your CGPA of Sem-1 based on your marks in Major Exam."
     />
     <meta
       property="og:url"
-      content="https://KnowYourCGPA.github.io/cse-sem7.html/"
+      content="https://KnowYourCGPA.github.io/cse-sem1.html/"
     />
 
-    <link rel="stylesheet" href="/decorationHouse/style.css" />
-    <link rel="icon" type="image/x-icon" href="/decorationHouse/favicon.jpg" />
+    <link rel="stylesheet" href="decorationHouse/style.css" />
+    <link rel="icon" type="image/x-icon" href="decorationHouse/favicon.jpg" />
   </head>
-
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-RSLTHGS9P4"
@@ -39,7 +37,7 @@
       <header id="mainHeader">
         <div id="headercontainer">
           <a href="/" class="mainLogo">KnowYourCGPA</a>
-          <div class="darkmodeicon">
+          <div class="darkmodeicon" id="darkmodeicon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="48"
@@ -62,104 +60,94 @@
     <main>
       <div class="content">
         <div class="heading">
-          <h1>Semester: 7</h1>
+          <h1>Semester: 1</h1>
           <span class="branchName">CSE</span>
         </div>
         <form id="segmentContainer">
-          <!-- Subjects Start Here -->
+          <!-- SUBJECTS -->
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Nature Inspired Algorithms (NIP)</h3>
+              <h3>Engineering Mathematics 1</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSL4144: </span>
+              <span class="CourseCode">MTL1025: </span>
               <input type="number" name="Subject1_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Digital Image Processing (DIP)</h3>
+              <h3>Engineering Physics</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSL4091: </span>
+              <span class="CourseCode">PHL1012: </span>
               <input type="number" name="Subject2_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Digital Image Processing Lab</h3>
+              <h3>Engineering Physics Lab</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSP4091: </span>
+              <span class="CourseCode">PHP1012: </span>
               <input type="number" name="Subject3_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Wireless Networks (WN)</h3>
+              <h3>Digital Electronics</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSE3074: </span>
+              <span class="CourseCode">ECL2027: </span>
               <input type="number" name="Subject4_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>High Performance Computing (HPC)</h3>
+              <h3>Digital Electronics Lab</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSE3122: </span>
+              <span class="CourseCode">ECP2027: </span>
               <input type="number" name="Subject5_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Entrepreneurship Management (EM)</h3>
+              <h3>Intro to C Programming</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">BUL4011: </span>
+              <span class="CourseCode">CSL1022: </span>
               <input type="number" name="Subject6_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Summer Internship - III</h3>
+              <h3>Intro to C Programming Lab</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSC4001: </span>
+              <span class="CourseCode">CSP1022: </span>
               <input type="number" name="Subject7_m" placeholder="marks?" />
             </div>
           </div>
           <div class="inputContainer">
             <div class="firstRow">
-              <h3>Mini Project 4</h3>
+              <h3>Engineering Graphics with CAD</h3>
             </div>
             <div class="secondRow">
-              <span class="CourseCode">CSD4002: </span>
+              <span class="CourseCode">MEP1039: </span>
               <input type="number" name="Subject8_m" placeholder="marks?" />
             </div>
           </div>
-
-          <!-- Subjects End Here -->
-
-          <div class="cgpaCalc">
-            <div class="toggle-container">
-              <input type="checkbox" id="toggleButton" class="toggle-input" />
-              <label for="toggleButton" class="toggle-btn"></label>
-              <h3>Get CGPA</h3>
+          <div class="inputContainer">
+            <div class="firstRow">
+              <h3>Value Addition</h3>
             </div>
-            <div id="content" class="hidden-content">
-              <div class="secondRow cgpaAsk">
-                <span class="CourseCode">Your CGPA till Sem 6:</span>
-                <input
-                  type="number"
-                  name="previousCGPA"
-                  placeholder="CGPA?"
-                  id="cgpaInput"
-                />
-              </div>
+            <div class="secondRow">
+              <span class="CourseCode">AEC1/ VAC1 </span>
+              <input type="number" name="Subject9_m" placeholder="marks?" />
             </div>
           </div>
+
+          <!-- Subject End Here -->
 
           <div class="buttonContainer">
             <button onclick="resetForm()" type="button">Clear</button>
@@ -194,7 +182,7 @@
       </div>
     </footer>
 
-    <script src="/calculationCenter/CSE/CSE_sem7.js"></script>
+    <script src="/calculationCenter/CSE/CSE_sem1.js"></script>
     <script src="/sitewideJavascripts/toggleButton.js"></script>
   </body>
 </html>
