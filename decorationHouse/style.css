@@ -66,7 +66,7 @@ svg{
 #allHeader {
     position: sticky;
     top: 0;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     z-index: 100
 }
 
@@ -471,13 +471,13 @@ footer a {
     font-family: 'handjet';
     font-weight: 500;
     padding-bottom: 7px;
-	text-align: center;
+    text-align: center;
 }
 
 .welcometext p{
     color: var(--h1color);
     font-family: 'open sans';
-	text-align:center;
+    text-align: center;
 }
 
 .button-group button {
