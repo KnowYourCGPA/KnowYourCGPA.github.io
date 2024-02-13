@@ -31,7 +31,7 @@ function calculateCGPA() {
         let previousCGPA = parseFloat(document.getElementById('cgpaInput').value);
         let newCGPA = ((previousCGPA * 2 + Number(sgpaPointer)) / 3).toFixed(2);
 
-        document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer} - CGPA: ${newCGPA}`;
+        document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer} - CGPA: ${newCGPA} (approx)`;
 
       }}
       else document.getElementById("displaySGPA").textContent = `SGPA: ${sgpaPointer}`;
